@@ -1,0 +1,23 @@
+<?php
+
+    include("config.php");
+    session_start();
+
+    $sql = "SELECT * FROM admin WHERE User = '".$_POST['uname']."' AND Parola = '".$_POST['psw']."' ";
+    $result = $conn->query($sql) or die(mysqli_error($conn));
+    
+    if($result->num_rows > 0) {
+
+        //session_register("username");
+        $_SESSION['login_user'] = $username;
+        $_SESSION['logged'] = true;
+        $_SESSION['username']=$_POST['uname'];
+        
+        header("location: index.php");
+    }
+    else {
+        $error = "Numele sau user-ul gresite";
+        echo $error.'</br></br><input type="button" value = "Inapoi" onclick="history.go(-1);" style="margin-left:9%" ?>';
+    }
+
+?>

@@ -1,0 +1,19 @@
+<?php
+    include("config.html");
+    session_start();
+
+    if($_POST['psw']==$_POST['repsw'])
+    {
+        $sql = "INSERT INTO admin(User, Password) VALUES('".$_POST['uname']."', '".$_POST['psw']."')";
+        if($conn->query($sql) === TRUE)
+        {
+            echo "<p>Successfully created!</br>Now you can<a href=\"login.html\">log in</a>!</p> ";
+        }
+        else echo "<p>Error! Cannot introduce the information</p>";
+    }
+    else echo '<p>Wrong password! </br></br><input type="button" value = "Back" onclick="history.go(-1);" style="margin-left:7%" ?>';
+?>
+<html>
+<body background="background.jpg"">
+</body>
+</html>
