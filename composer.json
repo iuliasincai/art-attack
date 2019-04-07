@@ -1,0 +1,12 @@
+{
+    "name": "mara/art-attack",
+    "description": "Atestat",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mara",
+            "email": "damianmaraalina@yahoo.com"
+        }
+    ],
+    "require": {}
+}
