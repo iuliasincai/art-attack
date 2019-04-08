@@ -8,5 +8,7 @@
             "email": "damianmaraalina@yahoo.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-mysqli": "*"
+    }
 }
