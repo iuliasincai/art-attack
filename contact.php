@@ -3,7 +3,7 @@
 <head>
 	<title>Contact</title>
 </head>
-<body background="background.jpg"">
+<body background="background.jpg">
 <font style="font-family:Comic Sans, MS;font-weight:bold;color:#FFF">
 	<br><div align="center">
 	<table width=100% border=0>
@@ -19,15 +19,15 @@
 			<td width="50%" rowspan="5" valign="top">
 				<h3><u><a style="color:#800080;">How to contact us:</u></h3>
 				<ul>
-					<li>You can call us at 0741098405</li><br>					
+					<li>You can call us at 0741098405</li><br>
 					<li>You can email us at damianmaraalina@yahoo.com</li><br>
 					<li>Come to our place on Str. Constantin Brancoveanu, nr. 53, Cluj-Napoca, Cluj, Romania</li><br>
-                    <li>Or just via fax 0264551059</li><br>      
+                    <li>Or just via fax 0264551059</li><br>
 				</ul>
-			</td>			
+			</td>
 		<tr>
 	</div><br><br>
-	<div align="center"><a href="home.html" style="color:#000080;"><b>HOME</b></a></div><br><br><br>
+	<div align="center"><a href="home.php" style="color:#000080;"><b>HOME</b></a></div><br><br><br>
 </font>
 </body>
 </html>
