@@ -10,9 +10,10 @@
     
       $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
+      
+      var_dump($result) ;
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-      var_dump($row);
       $count = mysqli_num_rows($result);
 
       // If result matched $myusername and $mypassword, table row must be 1 row
