@@ -36,6 +36,7 @@ $db['default'] = array(
    define('DB_PASSWORD', 'b5a58968');
    define('DB_DATABASE', 'heroku_c25aa04300f0c23');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE)
+       var_dump($db);
 ?>
 
 <!-- <?php
