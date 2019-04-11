@@ -11,7 +11,7 @@
       $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       
-      var_dump($result) ;
+      var_dump($db) ;
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
       $count = mysqli_num_rows($result);
