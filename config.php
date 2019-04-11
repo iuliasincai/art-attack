@@ -31,7 +31,11 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
-$db = mysqli_connect($cleardb_server, $cleardb_username,$cleardb_password,$cleardb_db);
+   define('DB_SERVER', 'mysql://bc02618683702b:b5a58968@eu-cdbr-west-02.cleardb.net/heroku_c25aa04300f0c23?reconnect=true');
+   define('DB_USERNAME', 'bc02618683702b');
+   define('DB_PASSWORD', 'b5a58968');
+   define('DB_DATABASE', 'heroku_c25aa04300f0c23');
+   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE)
 ?>
 
 <!-- <?php
