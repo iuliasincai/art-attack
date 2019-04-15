@@ -3,10 +3,13 @@
    include('session.php');
 ?>
 <html>
-<title>CUPRINS</title>
+<title>Art Attack</title>
 <head>
 <br><br>
 <font size =30><i><b><div align="center">Art Attack</div></font size=30></i></b>
+<?php if ($login_session !== null): ?>
+<div align="right" style="font-size: 30px" >Logged in as: <?php echo $login_session ?></div>
+<?php endif; ?>
 </head>
 <body background="background.jpg">
 <br><br><br><br>
